@@ -4,7 +4,7 @@ import React, { useState } from "react";
 export default function App() {
   const [count, setCount] = useState(0);
 
-  clickHandler = (e) => {
+  const clickHandler = (e) => {
     if (e.target.innerText === "Increment") {
       setCount((prev) => prev + 1);
     } else if (e.target.innerText === "Decrement") {
